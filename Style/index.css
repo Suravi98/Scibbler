@@ -1,40 +1,24 @@
 body {
-  background: url('../images/background.jpg');
-  background-position: center;
-  background-size: cover;
+    background: url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .header-container {
-    height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  
-.container {
-  display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+    width: 100%;
+}
 
-  .post-buttons-container {
+.post-buttons-container {
     display: flex;
     justify-content: center;
     align-items: center;
     top: 50%;
     width: 100%;
     position: absolute;
-    margin-top: 0vh;
-    position: fixed;
-    opacity: ;
-  }
+}
 
-  .post-button {
+.post-button {
     font-size: 16px;
     background: #CFB53B;
     color: #000000;
@@ -43,16 +27,16 @@ body {
     cursor: pointer;
     width: 125px;
     margin: 0 10px;
-  }
+}
 
-  .post-button:hover {
+.post-button:hover {
     color: #fff;
     background: #3366cc;
-  }
+}
 
-  .new-post-modal-content {
+.new-post-modal-content {
     width: 80%;
-  }
+}
 
 .new-post-modal-textarea {
     height: 40vh;
@@ -76,3 +60,30 @@ body {
     background-color: #fff;
 }
 
+.close-btn-new-post-dialog {
+    position: absolute;
+    right: 20px;
+    /* top: 10px; */
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.close-btn-new-post-dialog:hover,
+.close-btn-new-post-dialog:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+#newPostModal a {
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#newPostModal a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
