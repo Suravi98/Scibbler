@@ -1,0 +1,99 @@
+.post-blog-container {
+    padding: 30px 55px; 
+}
+
+.post {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#authorEditBtnContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.post-author {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+#edit-PostButton {
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    border-color: white;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+#postText {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    text-align: justify;
+}
+
+.like-post {
+    margin-top: 8px;
+}
+
+#likePostBtn {
+    /* width: 80px; */
+    display: block;
+    background: #ed2553;
+    color: #ffffff;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.like-post #likePostBtn:hover {
+    transform: translateY(-3px);
+}
+
+#likesCount{
+    font-size: 15px;
+}
+
+#commentText {
+    margin-top: 20px;
+    display: flex;
+    width: 700px;
+    height: auto;
+}
+
+.add-comment-btn {
+    display: block;
+    background: #ed2553;
+    color: #ffffff;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.allCommentsHeading {
+    margin-top: 20px;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+#allCommentsBox {
+    background-color: #e2e4e6;
+    padding: 10px 0;
+    width: 70%;
+    display: none;
+}
