@@ -1,49 +1,56 @@
-.post-blog-container {
-    padding: 30px 55px; 
+.post-main-container {
+    padding: 30px 60px;
 }
 
-.post {
-    font-size: 23px;
+.post-title {
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #authorEditBtnContainer {
-    display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 15px 0;
 }
 
 .post-author {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-family: 'Ubuntu Mono', cursive;
+    font-size: 22px;
 }
 
-#edit-PostButton {
-    color: white;
-    background-color: brown;
+#editPostButton {
+    width: 80px;
+    padding: 10px;
     cursor: pointer;
-    padding: 6px;
-    border-radius: 4px;
-    border-color: white;
-    box-shadow: none;
-    border: none;
+    background: #ed2553;
+    color: #fff;
+    float: right;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
     outline: none;
+    border: none;
+}
+
+.fa-edit,
+.fa-save {
+    padding-left: 7px;
+}
+
+.fa-thumbs-up {
+    margin-right: 5px;
 }
 
 #postText {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 10px;
+    font-size: 16px;
     text-align: justify;
 }
 
 .like-post {
-    margin-top: 8px;
+    margin-top: 20px;
 }
 
 #likePostBtn {
-    /* width: 80px; */
+    width: 80px;
     display: block;
     background: #ed2553;
     color: #ffffff;
@@ -53,6 +60,8 @@
     cursor: pointer;
     border: none;
     outline: none;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
     margin-bottom: 10px;
 }
 
@@ -60,34 +69,38 @@
     transform: translateY(-3px);
 }
 
-#likesCount{
-    font-size: 15px;
+#likesCount {
+    color: #666;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+
+.comment-form {
+    width: 100%;
+    margin: 25px 0;
 }
 
 #commentText {
-    margin-top: 20px;
-    display: flex;
-    width: 700px;
-    height: auto;
+    width: 70%;
 }
 
 .add-comment-btn {
-    display: block;
-    background: #ed2553;
-    color: #ffffff;
-    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    background-color: #ed2553;
+    color: #fff;
     cursor: pointer;
-    border: none;
+    font-size: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
     outline: none;
-    margin-bottom: 10px;
+    border: none;
+    margin-top: 10px;
 }
 
 .allCommentsHeading {
-    margin-top: 20px;
-    display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
